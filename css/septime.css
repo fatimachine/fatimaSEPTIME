@@ -1,0 +1,13 @@
+/* style septime */
+
+body {
+    /* background-color: red; */
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0 auto;
+   
+}
+
+address {
+float:inline-start;
+}
+
