@@ -1,0 +1,122 @@
+/* page css zoning septime  */
+
+* {
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* fin reset  */
+
+body {
+   
+font-family: 'Cormorant Garamond', serif;
+background-color: #fdf6e6;
+line-height: 1;
+}
+.clear {
+    clear: both;
+}
+
+
+#conteneur {
+    width: 1000px;
+
+    margin: 0 auto;
+
+    background-color: #fff;
+}
+
+header {
+background-color:#fea500; 
+height: 250px;
+text-align: center;
+
+}
+
+
+.sous-section {
+    width: 500px;
+    height: 500px;
+    float: left;
+    padding-top: 170px;
+    /* box-sizing: border-box;
+     */
+}
+
+footer {
+ height: 300px;
+background-color:#ff4500;
+text-align: center;
+}
+
+.img-assiette {
+    background: url(../img/assiette.png) no-repeat;
+    object-position: 50% 50%;
+}
+.img-salle {
+    background: url(../img/resto_01_grande.jpg);
+    object-position: 50% 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-service {
+background: url(../img/resto_02.jpg) no-repeat;
+object-position: 50% 50%;
+}
+
+.img-dressage {
+    background: url(../img/resto_03.jpg) no-repeat;
+    object-position: 50% 50%;
+}
+
+.img-gout {
+    background: url(../img/resto_04.jpg) no-repeat;
+    object-position: 50% 50%;
+}
