@@ -1,189 +1,181 @@
-/* page css zoning septime  */
+/* styles flex pouir septime */
 
 * {
     box-sizing: border-box;
 }
 
-body {
-   
-font-family: 'Cormorant Garamond', serif;
-background-color: #fdf6e6;
-line-height: 1;
-}
-.clear {
-    clear: both;
+/* ici mettre reset normalize.css */
+
+
+/* couleurs pour identifier */
+
+.bleu {
+    background-color: lightblue;
 }
 
+.vert {
+    background: lightgreen;
+}
+
+.gris {
+    background-color: lightgrey;
+}
+
+/* la grille en flex */
+/* la classe pour créer une rangée */
 
 .row {
     display: flex;
-    flex-direction: column;
-    width:1000px;
-    margin: 0 auto;
+    flex-direction: row;
+    /* passage à la ligne des éléments pour que la largeur des col soit respectée */
+    flex-wrap: wrap;
+    /* row-gap:5px; */
+    /* margin-bottom: 5px; */
+}
 
+/* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
+.col-1 {
+    /* cette valeur est la largeur en % d'une colonne si je veux la largeur de 2 colonnes je fais la largeur d'une colonne X 2 */
+    width: 8.333333%;
+    padding: 5px;
+}
+
+.col-2 {
+    width: 16.666666%;
+    padding: 5px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 5px;
+}
+
+.col-4 {
+    width: 33.333333%;
+    padding: 5px;
+}
+
+.col-5 {
+    width: 41.666666%;
+    padding: 5px;
+}
+
+.col-6 {
+    width: 50%;
+    /* padding: 5px; */
+}
+
+.col-7 {
+    width: 58.333333%;
+    padding: 5px;
+}
+
+.col-8 {
+    width: 66.666666%;
+    padding: 5px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 5px;
+}
+
+.col-10 {
+    width: 83.333333%;
+    padding: 5px;
+}
+
+.col-11 {
+    width: 91.666666%;
+    padding: 5px;
+}
+
+.col-12 {
+    width: 100%;
+    /* padding: 5px;     */
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+
+
+/* La mise en page */
+
+body {
     background-color: #fff;
+    font-family: 'Cormorant Garamond', serif;
 }
 
+/* conteneur principal  */
+#conteneur {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(235, 235, 235);
+}
+
+/* les zone carrés  */
+
+.carre {
+    width: 500px;
+    height: 500px;
+}
+
+/* en-tête */
 header {
-height: 200px;
-width: 500px;
-margin: auto;
-padding-top: 50px;
-
-text-align: center;
+    padding-top: 50px;
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    margin: auto;
 }
 
- p {
-text-transform: uppercase;
-font-style: normal;
+/* navigation haute */
 
-color: #000;
-}
-
- header h1 {
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    letter-spacing: .3em;
+nav ul {
+    justify-content: center;
 }
 
 header nav ul li {
     display: inline-block;
 }
 
- header nav ul li a {
-    text-decoration: none;
-    font-style: italic;
-    font-size: 1.2em;
-}
 
-header nav ul li a:hover {
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-}
+/* illustration en bg css */
 
-h2 {
-border-bottom: 2px solid #000;
-padding-bottom: 15px;
-font-size: 1.7em;
-text-transform: uppercase;
-letter-spacing: .4em;
-}
-
-p {
-    font-style: italic;
-    font-size: 1.1em;
-    padding-top: 16px;
-}
-.note {
-    margin-top: 5px;
-    background-color: rgba(218, 218, 218, 0.623);
-    border-radius: 15px;
-    padding: 0 0 15px 10px;
-    text-transform: uppercase;
-}
-.sous-section {
-    width: 500px;
-    height: 500px;
-   
-   
-} 
-.col-1 {
-    width: 50%;
-    padding: 5px;
-}
-.col-2 {
-    width: 50%;
-    padding: 5px;
-}
-
-#assiette .texte-assiette {
-    text-align: right;
-    padding-right: 200px;
-}
-
-#assiette h2 {
-    margin-top: 60px;
-    text-transform: none;
-    font-style: italic;
-    letter-spacing: normal;
-    border: none;
-    padding: 0;
-}
-
-#assiette hr {
-    position: relative;
-    left: -225px;
-    width: 510px;
-    z-index: 2;
-}
-
-#assiette p {
-    text-transform: uppercase;
-    font-style: normal;
-    text-align: right;
-    padding-top: 0;
-}
-.img-assiette {
-    background: url(../img/assiette.png) no-repeat;
-    object-position: 50% 50%;
+.assiette {
+    background: url("../img/assiette.jpg") transparent no-repeat;
     background-position: center;
- 
-}
-
-.img-resto-01 {
-    background: url(../img/resto_01_grande.jpg);
-    object-position: 50% 50%;
-    background-position: center;
-    background-size: cover;
-}
-
-.img-resto-02 {
-background: url(../img/resto_02.jpg) no-repeat;
-object-position: 50% 50%;
-}
-
-.img-resto-03 {
-    background: url(../img/resto_03.jpg) no-repeat;
-    object-position: 50% 50%;
-}
-
-.img-resto-04 {
-    background: url(../img/resto_04.jpg) no-repeat;
-    object-position: 50% 50%;
-}
-footer {
-    height: 300px;
-   text-align: center;
-   padding-bottom: 100px;
-   }
-
-footer h2{
-width: 500px;
-margin: auto;
-padding: 0;
-
-
-border-bottom: 2px solid #000;
-border-top: 2px solid #000;
-
-line-height: 50px;
-letter-spacing: .5em;
-} 
-
-address {
-font-family: serif;
-font-size: smaller;
-text-transform: uppercase;
-}
-
-footer figcaption {
-position: relative;
-bottom: 100px;
-background-color: #fff;
-
-
-font-weight: bold;
+    background-size: 100%;
 }
